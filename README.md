@@ -2,7 +2,7 @@
 Variational Autoencoder (VAE) to generate original pictures of cats, since there aren't already enough on the internet.
 
 # Model Details
-First, I trained a standard autoencoder to reduce the data from a 40x40 greyscale cat image to a 640 element vector. This autoencoder consisted of two fully-connected layers for both the encoder and decoder. The other notebook shows the same model configuration without the VAE.
+First, I trained a standard autoencoder to reduce the data from a 40x40 greyscale cat image to a 640 element vector. This autoencoder consisted of two fully-connected layers for both the encoder and decoder. The other notebook shows the same model configuration without the VAE. The weights of the decoder are actually tied to the transpose of the encoder weights. This was done to approach a more robust solution and reduce the number of weights and training time for the model. Overall, the vanilla autoencoder is very successful.
 
 The magic happens when the VAE encodes the standard encoders down to 20 neurons. This is done with three fully connected layers in both the encoder and decoder.
 
