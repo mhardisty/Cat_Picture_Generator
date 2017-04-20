@@ -8,6 +8,8 @@ The magic happens when the VAE encodes the standard encoders down to 20 neurons.
 
 I was a bit short on training time so the results aren't stellar for the generated images. However, the cat_standard_autoencoder code performed very well. With some tuning and additional training time, it may be possible to get better results for the generated images.
 
+I will clean up the code and put more comments in by midnight of 4/20/2017.
+
 # Data Credit
 The data for this project came from a Kaggle competition. Link is here: https://www.kaggle.com/c/dogs-vs-cats
 
